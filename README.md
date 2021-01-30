@@ -25,7 +25,7 @@ codefactor-badge: True
 
 <!-- start prerequisites -->
 ## Prerequisites
-PowerShell **Desktop** (Windows PowerShell 2.0+) or **Core** versions.
+PowerShell **Desktop** (Windows PowerShell 2.0+) or **Core** editions.
 <!-- end prerequisites -->
 
 <!-- start examples -->
