@@ -1,10 +1,8 @@
 <!-- start project-info -->
 <!--
-project_title: monitoriza-urls
-github_project: https://github.com/atareao/monitoriza-urls
+project_title: Test-Ports.ps1
+github_project: https://github.com/jouleSoft/test-ports.ps1
 license: MIT
-icon: /datos/Sync/Programacion/Python/monitoriza-urls/data/icons/binoculars.svg
-homepage: https://www.atareao.es/tutorial/trabajando-con-systemd/monitoriza-urls
 license-badge: True
 contributors-badge: True
 lastcommit-badge: True
