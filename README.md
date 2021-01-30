@@ -19,7 +19,7 @@ codefactor-badge: True
 <!-- end badges -->
 
 <!-- start description -->
-<h1 align="center">Welcome to <span id="project_title">Test-Ports.ps1</span></h1>
+<h1 align="center"><span id="project_title">Test-Ports.ps1</span></h1>
 <p><span id="project_title">Test-Ports.ps1</span> is a PowerShell script for monitoring a predefined TCP port list.</p>
 <!-- end description -->
 
