@@ -2,10 +2,10 @@
 
 <#
 .SYNOPSIS
-  Usual TCP ports checker
+  Pre-Settle TCP ports monitoring tool
 
 .DESCRIPTION
-  Usual TCP ports monitoring tool
+  PowerShell script for monitoring a Pre-settled TCP port list
 
 .PARAMETER ComputerName
   Mandatory. Target hostname or IP address
@@ -42,7 +42,7 @@
   Test-Ports.ps1 -ComputerName $(Get-Content .\List.txt)
 
 .LINK
-  https://github.com/jouleSoft/js-PSScripts
+  https://github.com/jouleSoft/Test-Ports.ps1
 
 .LINK  
   https://stackoverflow.com/questions/9566052/how-to-check-network-port-access-and-display-useful-message
@@ -76,7 +76,7 @@ $ErrorActionPreference = "SilentlyContinue"
 #Script title, version, description and license
 $ScriptTitle        = "Test-Ports.ps1"
 $ScriptVersion      = "1.1"
-$ScriptDescription  = "Usual TCP ports monitoring tool"
+$ScriptDescription  = "Pre-Settle TCP ports monitoring tool"
 $ScriptLicense      = "MIT"
 
 #-----------------------------------------------------------[Functions]------------------------------------------------------------

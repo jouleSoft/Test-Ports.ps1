@@ -32,7 +32,7 @@ PowerShell **Desktop** (Windows PowerShell 2.0+) or **Core** editions.
 ## Examples
 ### Check a single target computer
 
-``` PowerShell
+``` 
 PS > Test-Ports.ps1 -ComputerName 172.16.0.2
 Test-Ports.ps1 v.1.1 - PowerShell TCP ports monitoring tool (MIT)
 
@@ -43,7 +43,7 @@ Host/IP     RDP WinRM VNC HTTP
 
 ### Check a list of targets 
 
-``` PowerShell
+``` 
 PS > Test-Ports.ps1 -ComputerName $(Get-Content .\List.txt) 
 Test-Ports.ps1 v.1.1 - PowerShell TCP ports monitoring tool (MIT)
 
