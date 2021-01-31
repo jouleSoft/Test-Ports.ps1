@@ -36,10 +36,14 @@
                     \_ Used 'Out-Null' instead for avoid an output.
   
 .EXAMPLE
-  Test-Ports.ps1 -ComputerName 172.16.0.20
+  Single target
+
+  PS> Test-Ports.ps1 -ComputerName 172.16.0.20
 
 .EXAMPLE
-  Test-Ports.ps1 -ComputerName $(Get-Content .\List.txt)
+  Multiple target loaded from a file
+
+  PS> Test-Ports.ps1 -ComputerName $(Get-Content .\List.txt)
 
 .LINK
   https://github.com/jouleSoft/Test-Ports.ps1
@@ -61,8 +65,8 @@
 
 #Script parameters
 Param(
-  [Parameter(Mandatory=$True, Position=0, HelpMessage="Enter target hostname or IP address")]
-  [String[]]$ComputerName
+    [Parameter(Mandatory=$True, Position=0, HelpMessage="Enter target hostname or IP address")]
+    [String[]]$ComputerName
 )
 
 #Set error action to 'SilentlyContinue'
@@ -74,10 +78,10 @@ $ErrorActionPreference = "SilentlyContinue"
 #----------------------------------------------------------[Declarations]----------------------------------------------------------
 
 #Script title, version, description and license
-$ScriptTitle        = "Test-Ports.ps1"
-$ScriptVersion      = "1.1"
-$ScriptDescription  = "Pre-Settle TCP ports monitoring tool"
-$ScriptLicense      = "MIT"
+$sScriptTitle        = "Test-Ports.ps1"
+$sScriptVersion      = "1.1"
+$sScriptDescription  = "Pre-Settle TCP ports monitoring tool"
+$sScriptLicense      = "MIT"
 
 #-----------------------------------------------------------[Functions]------------------------------------------------------------
 <#
@@ -332,14 +336,14 @@ function Test-Ports {
 #-----------------------------------------------------------[Execution]------------------------------------------------------------
 
 #Show script header
-Get-ScriptHeader -Title $ScriptTitle -Version $ScriptVersion -Description $ScriptDescription -License $ScriptLicense
+Get-ScriptHeader -Title $sScriptTitle -Version $sScriptVersion -Description $sScriptDescription -License $sScriptLicense
 
 #Operations
 $ComputerName | Test-Ports
 
 #----------------------------------------------------------[Finalization]-----------------------------------------------------------
 
-Remove-Variable ScriptTitle
-Remove-Variable ScriptVersion
-Remove-Variable ScriptDescription
-Remove-Variable ScriptLicense
+Remove-Variable sScriptTitle
+Remove-Variable sScriptVersion
+Remove-Variable sScriptDescription
+Remove-Variable sScriptLicense
